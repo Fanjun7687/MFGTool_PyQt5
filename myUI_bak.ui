@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Times New Roman</family>
+    <pointsize>10</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MFGTestTool</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>C:/Users/Administrator/.designer/backup/icon/matlab.ico</normaloff>C:/Users/Administrator/.designer/backup/icon/matlab.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="pb_Openfile">
+     <property name="geometry">
+      <rect>
+       <x>2</x>
+       <y>10</y>
+       <width>28</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Load Setting File</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{border-image: url(gif/open-folder.gif)}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_Run">
+     <property name="geometry">
+      <rect>
+       <x>35</x>
+       <y>10</y>
+       <width>28</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Run Testing</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{border-image: url(gif/fastforward.gif)}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_Devicemgr">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>10</y>
+       <width>27</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Device Manager</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{border-image: url(gif/home.gif)}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_Remote">
+     <property name="geometry">
+      <rect>
+       <x>68</x>
+       <y>10</y>
+       <width>27</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Connect Remote PC</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{border-image: url(gif/user.gif)}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_Register">
+     <property name="geometry">
+      <rect>
+       <x>165</x>
+       <y>10</y>
+       <width>28</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Register</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{border-image: url(gif/calendar.gif)}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_Command">
+     <property name="geometry">
+      <rect>
+       <x>132</x>
+       <y>10</y>
+       <width>28</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Dos Command</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{border-image: url(gif/edit.gif)}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>true</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_PingTest">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>10</y>
+       <width>27</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Ping Host Test</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{border-image: url(gif/headphones.gif)}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_Keyboard">
+     <property name="geometry">
+      <rect>
+       <x>198</x>
+       <y>10</y>
+       <width>27</width>
+       <height>27</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>Soft KeyBoard</string>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{border-image: url(gif/cart.gif)}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <property name="autoExclusive">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>16</y>
+       <width>121</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>StopOnFailed</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>40</y>
+      <width>1281</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lb_ProjectName">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>0</y>
+       <width>271</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(18, 86, 117);</string>
+     </property>
+     <property name="text">
+      <string>ProjectName</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>0</y>
+       <width>311</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <widget class="QRadioButton" name="radioButton_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>66</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>SFISON</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_3">
+      <property name="geometry">
+       <rect>
+        <x>118</x>
+        <y>20</y>
+        <width>81</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>SFISOFF</string>
+      </property>
+     </widget>
+     <widget class="QRadioButton" name="radioButton_4">
+      <property name="geometry">
+       <rect>
+        <x>207</x>
+        <y>20</y>
+        <width>91</width>
+        <height>19</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>SAMPLE</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QGraphicsView" name="graphicsView">
+     <property name="geometry">
+      <rect>
+       <x>580</x>
+       <y>0</y>
+       <width>60</width>
+       <height>60</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>100</y>
+      <width>271</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>271</width>
+      <height>621</height>
+     </size>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>271</width>
+       <height>571</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <weight>75</weight>
+       <bold>true</bold>
+       <stylestrategy>PreferAntialias</stylestrategy>
+      </font>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>PCInfo</string>
+      </attribute>
+      <widget class="QFrame" name="frame_5">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>266</width>
+         <height>541</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QTableView" name="tv_PCInfo">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>266</width>
+          <height>360</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <pointsize>10</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferAntialias</stylestrategy>
+         </font>
+        </property>
+        <property name="editTriggers">
+         <set>QAbstractItemView::NoEditTriggers</set>
+        </property>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+       </widget>
+       <widget class="QPlainTextEdit" name="pte_SFISLog">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>360</y>
+          <width>271</width>
+          <height>181</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Times New Roman</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(255, 0, 0);</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="cbb_FIXCOM">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>133</x>
+          <y>293</y>
+          <width>131</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferAntialias</stylestrategy>
+         </font>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="cbb_DUTCOM">
+        <property name="geometry">
+         <rect>
+          <x>133</x>
+          <y>323</y>
+          <width>131</width>
+          <height>30</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+          <stylestrategy>PreferAntialias</stylestrategy>
+         </font>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>DUTInfo</string>
+      </attribute>
+      <widget class="QTableView" name="tv_DUTInfo">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-1</y>
+         <width>266</width>
+         <height>271</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Times New Roman</family>
+         <pointsize>10</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+         <stylestrategy>PreferAntialias</stylestrategy>
+        </font>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="pte_DUTLog">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>270</y>
+         <width>266</width>
+         <height>280</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_4">
+    <property name="geometry">
+     <rect>
+      <x>270</x>
+      <y>100</y>
+      <width>1011</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QTabWidget" name="tabWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>1011</width>
+       <height>571</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="tab_TestMessage">
+      <attribute name="title">
+       <string>TestMessage</string>
+      </attribute>
+      <widget class="QPlainTextEdit" name="pTE_TestLog">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1006</width>
+         <height>371</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPlainTextEdit" name="pTE_SFCLog">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>370</y>
+         <width>1006</width>
+         <height>171</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_TestResult">
+      <attribute name="title">
+       <string>TestResult</string>
+      </attribute>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1006</width>
+         <height>381</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QFrame" name="frame_6">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>380</y>
+         <width>1001</width>
+         <height>35</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="lb_ErrorCode">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>1001</width>
+          <height>35</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(169, 200, 145);
+color: rgb(255, 0, 0);
+</string>
+        </property>
+        <property name="text">
+         <string>ErrorCode:</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QFrame" name="frame_7">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>418</y>
+         <width>1001</width>
+         <height>120</height>
+        </rect>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+       <widget class="QLabel" name="lb_TestStatus">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>-1</y>
+          <width>1001</width>
+          <height>121</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Comic Sans MS</family>
+          <pointsize>60</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Running......</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="tab_CPKData">
+      <attribute name="title">
+       <string>CPKData</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_OracleDB">
+      <attribute name="title">
+       <string>OracleDB</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_CableLoss">
+      <attribute name="title">
+       <string>CableLoss</string>
+      </attribute>
+     </widget>
+     <widget class="QWidget" name="tab_RFSetting">
+      <attribute name="title">
+       <string>RFSetting</string>
+      </attribute>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1280</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+     <pointsize>10</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionLoad_Setting_File"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_View">
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>&amp;View</string>
+    </property>
+    <addaction name="actionTest_Panel"/>
+    <addaction name="actionTest_Message"/>
+    <addaction name="separator"/>
+    <addaction name="actionSFIS_Message"/>
+    <addaction name="actionFIX_COM"/>
+    <addaction name="actionDUT_COM"/>
+   </widget>
+   <widget class="QMenu" name="menu_Run">
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>&amp;Run</string>
+    </property>
+    <addaction name="actionStop_On_Failed"/>
+    <addaction name="actionStayOnTop"/>
+    <addaction name="actionOracleAccess"/>
+    <addaction name="actionCableLosss"/>
+    <addaction name="actionOnlyDebug"/>
+    <addaction name="separator"/>
+    <addaction name="actionPreTestMode"/>
+    <addaction name="actionRebootDUT"/>
+    <addaction name="actionAdbInitCheck"/>
+   </widget>
+   <widget class="QMenu" name="menu_Reset">
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>&amp;Reset</string>
+    </property>
+    <addaction name="actionZero_Ant"/>
+    <addaction name="actionZero_Con"/>
+    <addaction name="actionZero_Pass"/>
+    <addaction name="actionZero_Fail"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="action_About"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menu_View"/>
+   <addaction name="menu_Run"/>
+   <addaction name="menu_Reset"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionLoad_Setting_File">
+   <property name="text">
+    <string>&amp;Load Setting File</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>&amp;Exit</string>
+   </property>
+  </action>
+  <action name="actionTest_Panel">
+   <property name="text">
+    <string>Test Panel</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Times New Roman</family>
+    </font>
+   </property>
+  </action>
+  <action name="actionTest_Message">
+   <property name="text">
+    <string>Test Message</string>
+   </property>
+  </action>
+  <action name="actionSFIS_Message">
+   <property name="text">
+    <string>SFIS Message</string>
+   </property>
+  </action>
+  <action name="actionFIX_COM">
+   <property name="text">
+    <string>FIX COM</string>
+   </property>
+  </action>
+  <action name="actionDUT_COM">
+   <property name="text">
+    <string>DUT COM</string>
+   </property>
+  </action>
+  <action name="actionStop_On_Failed">
+   <property name="text">
+    <string>StopOnFailed</string>
+   </property>
+  </action>
+  <action name="actionStayOnTop">
+   <property name="text">
+    <string>StayOnTop</string>
+   </property>
+  </action>
+  <action name="actionOracleAccess">
+   <property name="text">
+    <string>OracleAccess</string>
+   </property>
+  </action>
+  <action name="actionCableLosss">
+   <property name="text">
+    <string>CableLosss</string>
+   </property>
+  </action>
+  <action name="actionOnlyDebug">
+   <property name="text">
+    <string>OnlyDebug</string>
+   </property>
+  </action>
+  <action name="actionPreTestMode">
+   <property name="text">
+    <string>PreTestMode</string>
+   </property>
+  </action>
+  <action name="actionRebootDUT">
+   <property name="text">
+    <string>RebootDUT</string>
+   </property>
+  </action>
+  <action name="actionAdbInitCheck">
+   <property name="text">
+    <string>AdbInitCheck</string>
+   </property>
+  </action>
+  <action name="actionZero_Ant">
+   <property name="text">
+    <string>Zero Ant</string>
+   </property>
+  </action>
+  <action name="actionZero_Con">
+   <property name="text">
+    <string>Zero Con</string>
+   </property>
+  </action>
+  <action name="actionZero_Pass">
+   <property name="text">
+    <string>Zero Pass</string>
+   </property>
+  </action>
+  <action name="actionZero_Fail">
+   <property name="text">
+    <string>Zero Fail</string>
+   </property>
+  </action>
+  <action name="action_About">
+   <property name="text">
+    <string>&amp;About</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

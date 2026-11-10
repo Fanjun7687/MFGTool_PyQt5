@@ -1,0 +1,279 @@
+[General]
+productname = SBB-115
+stationlist = PT,FT,BurnIn
+stationname = BurnIn
+stationnumber = A01-1
+opworkid = F2703535
+issfclocal = 0
+isdialogbeforetest = 1
+isautofixture = 0
+adb_path = \FlashSysSN\adb.exe
+snlength = 3
+
+[SR1Project]
+dp_lowspec = 10
+dp_highspec = 220
+dp_counts = 0
+unitscale = 4
+areascale = 16
+br_lowspec = 0.8
+br_highspec = 1.2
+blemishcounts = 0
+cs_lowspec = 0.85
+cs_highspec = 1.15
+grayrate_spec = 0.70
+mtf_lowspec = 0.32
+mtf_highspec = 1.00
+bcolorspec = 75
+wcolorspec = 100
+rotate_highspec = 2.50
+tilt_highspec = 2.50
+rms_spec = 10.00
+thdn_spec = 0.50
+thd_spec = 0.50
+micarray_spec = 0.25
+micfflowspec = 5000
+micffhigspec = 120000
+micffisolowspec = 9999
+micffisohigspec = 9999
+
+[LPB100Project]
+connect_ssid = TPLINK-2G
+rssi_lowspec = -65
+ip_prefix = 10.193.20
+
+[HertzProject]
+hostname = HertzDUT
+serverport = 3000
+clientport = 3000
+iperftxspec = 89
+iperfrxspec = 89
+ipaddrbegin = 192.168.100.100
+ipaddrend = 192.168.100.100
+
+[DEVLIST]
+devname1 = Android Composite ADB Interface
+devname2 = NewTab CS1
+
+[TESTCMD]
+
+[Anritsu]
+isonanritsu = 0
+gpibaddress = 3
+anritsutitle = UCTS
+anritsuprogram = \Run_Anritsu.bat
+testflow = \UCTS\Settings\QCT_Calibration.xml
+reportfile = \UCTS\temp_Foxconn\Temp_Report.txt
+resultfile = \UCTS\temp_Foxconn\Temp_Result.txt
+stationinfofile = \UCTS\temp_Foxconn\Station_Info.txt
+anritsutimeout = 180
+
+[IQxel]
+isiqxeldualtest = 0
+iqhandleserverdriver = Y:
+iqhandleoncontrol = IQxel_handle_1.iqx
+iqhandleonrelease = IQxel_handle_0.iqx
+iqserverusername = administrator
+iqserverpassword = Lrbs7687
+iqserveraddress = \\10.193.206.2\IQxel_handle
+isoniqxel = 0
+iqxelipaddr = 192.168.100.254
+pathloss_2g = 12.6
+pathloss_5g = 14.9
+pathloss_5gac_chan1 = 21.2
+pathloss_5gac_chan2 = 24.2
+iqxelcalflag = 1
+iqxeltitle = J18W135.00_WIFI_Verify
+iqxelprogram = \J18W135.00_WIFI_Verify.bat
+iqxeltestflow = \AR6053_test.txt
+iqxellogfile = "C:\LitePoint\IQfact+\ATHR 6003_QLIB 3.2.0.Eng1\Bin\Log\Log_all.txt"
+iqxeloutputfile = "C:\LitePoint\IQfact+\ATHR 6003_QLIB 3.2.0.Eng1\Bin\Log\logOutput.txt"
+iqxeltimeout = 300
+
+[IQStream]
+isoniqstream = 0
+iqstreamtitle = J18W135.00_3G_Cal_Verify
+iqstreamcaltitle = J18W135.00_3G_Cal
+iqstreamvertitle = J18W135.00_3G_Verify
+iqstreamprogram = \J18W135.00_3G_Cal_Verify.bat
+iqstreamcalprogram = \J18W135.00_3G_Cal.bat
+iqstreamverprogram = \J18W135.00_3G_Verify.bat
+iqstreamtestflow = "C:\Program Files\LitePoint\IQvector_2.9.0_RC2.101869\testscripts\all_tech\main_script.py"
+iqstreamlogfile = \IQStreamLog\IQVector_dut1A_--_report.txt
+iqstreamoutputfile = \IQStreamLog\logOutput.txt
+iqstreamtimeout = 180
+
+[IQ2011]
+isoniq2011 = 0
+pathloss_2g = 4.5
+pathloss_2gl = 4.3
+pathloss_2gh = 4.7
+pathloss_5g = 5.5
+pathloss_5gl = 5.3
+pathloss_5gh = 5.7
+pathlossii_2g = 4
+pathlossii_5g = 6.5
+pathloss_2g_btchan1 = 33.7
+pathloss_2gl_btchan1 = 30.2
+pathloss_2gh_btchan1 = 30.2
+pathloss_2g_chan1 = 23.7
+pathloss_2gl_chan1 = 20.2
+pathloss_2gh_chan1 = 20.2
+pathloss_5g_chan1 = 21.2
+pathloss_5gl_chan1 = 22
+pathloss_5gh_chan1 = 26.3
+pathloss_2g_chan2 = 22.2
+pathloss_2gl_chan2 = 20.2
+pathloss_2gh_chan2 = 29.3
+pathloss_5g_chan2 = 24.2
+pathloss_5gl_chan2 = 24.2
+pathloss_5gh_chan2 = 24.2
+specpowerlo = 8.0
+specpowerhi = 12.0
+specfreqlo = -20
+specfreqhi = 20
+specevm = -25
+specmaskfailpoints = 0
+specrx = 10
+atten = 76
+specbtavgoutpowerlo = 0.0
+specbtavgoutpowerhi = 20.0
+specbtmaxber = 0.001
+
+[GSS6100]
+isongss6100 = 0
+cn_lowlimit = -50.0
+cn_highlimit = -10.0
+prn_id = 18
+
+[AGE34410A]
+ison34410a = 0
+gpibvisaaddress = 22
+voltagemax = 20.0
+voltagemin = 18.0
+
+[KEITHLEY2303A]
+ison2303a = 0
+gpibaddress = 5
+
+[AGE4416A]
+isone4416a = 0
+gpibaddress = 22
+maxpowerlevel = 50.0
+minpowerlevel = 18.0
+
+[AG8960]
+isona8960 = 0
+gpibnumber = 0
+gpibaddress = 14
+g3chipsettype = B50
+pathloss = 5.3
+imsinumber = 012345678912345
+specthermalpower = 10
+specchannelpower = 10
+specevm = -25
+specber = 10
+
+[CMW500]
+isoncmw500 = 1
+isgpibconnect = 1
+islanconnect = 0
+isusbconnect = 0
+gpibnumber = 23
+ipaddress = 192.168.1.111
+usbaddress = USB0::2391::4607::MY48100026::0::INSTR
+visaaddress = GPIB0::20::INSTR
+pathloss698 = 2.31
+pathloss850 = 2.41
+pathloss900 = 2.41
+pathloss1750 = 2.82
+pathloss1850 = 3.02
+pathloss1900 = 2.92
+pathloss1950 = 3.02
+pathloss2150 = 3.29
+pathloss2500 = 3.27
+pathloss2550 = 3.29
+pathloss2650 = 3.29
+pathloss2700 = 3.29
+xmm632xpath = "C:\Program Files (x86)\Intel\RF Calibration Verification\XMM632X_14.48\bin\"
+xmlconfigcal = CUST_XMM_6320.XML
+xmlconfigver = RF_Verification.XML
+pathloss_wifi_2gl = 4.3
+pathloss_wifi_2gm = 4.5
+pathloss_wifi_2gh = 4.7
+pathloss_wifi_5gl = 5.3
+pathloss_wifi_5gm = 5.5
+pathloss_wifi_5gh = 5.7
+pathloss_bt_2gl = 4.3
+pathloss_bt_2gm = 4.5
+pathloss_bt_2gh = 4.7
+antloss_wifi_2gl = 20.3
+antloss_wifi_2gm = 20.5
+antloss_wifi_2gh = 20.7
+antloss_wifi_5gl = 22.3
+antloss_wifi_5gm = 22.5
+antloss_wifi_5gh = 22.7
+antloss_bt_2gl = 22.3
+antloss_bt_2gm = 22.5
+antloss_bt_2gh = 22.7
+
+[AGN4010A]
+isonn4010a = 0
+gpibaddress = 15
+isgpibconnect = 0
+islanconnect = 1
+visaaddress = TCPIP0::10.193.204.161::inst0::INSTR
+pathloss = 4.85
+specpowerlo = 8.0
+specpowerhi = 11.5
+specfreqlo = -20
+specfreqhi = 20
+specevm = -25
+specmaskfailpoints = 10
+specrx = 10
+atten = 76
+specbtavgoutpowerlo = 1.0
+specbtavgoutpowerhi = 7.0
+specbtmaxber = 10.0
+
+[Result]
+pass = 1220
+fail = 1256
+
+[Cable]
+conmax = 5000
+antmax = 10000
+concounter = 3325
+antcounter = 7980
+
+[MACRange]
+ismaclocal = 1
+macbegin = 300ED5E95689
+macend = 300ED5E95750
+maccurrent = 8096CA16145E
+
+[IMEIRange]
+isimeilocal = 1
+imeibegin = 86281901006391
+imeiend = 86281901006342
+imeicurrent = 86281901006163
+
+[SAVELOG]
+islogonlocal = 1
+locallogpath = D:\Log\SR1\
+sfislogpath = D:\SFIS_Log\
+islogonserver = 0
+serverdrive = Y:
+username = mac_user
+password = 
+serveraddress = \\10.1.1.1\L10_TEST
+serverlogpath = Y:
+
+[DataBase]
+isoracledb = 0
+serverip = 172.16.241.141
+serverport = 1529
+dbname = minb2
+username = fmlbrd
+password = fmlbrd.123.
+

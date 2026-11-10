@@ -1,0 +1,24 @@
+[project]
+name = "mfgtool-pyqt5"
+version = "1.0.0"
+description = "MFG Tool - PyQt5 factory test station tool"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "pyqt5>=5.15.9",
+    "pywin32>=306",
+    "pygame>=2.5.0",
+    "keyboard>=0.13.5",
+    "mouse>=0.7.1",
+    "WMI>=1.5.1",
+    "pyserial>=3.5",
+]
+
+[tool.uv]
+# 注意: Windows 版 PyQt5 官方轮子只带 Qt 5.15.2, 该版本在含中文的路径下
+# 初始化 QApplication 会崩溃(0xC0000409), 因此虚拟环境必须放在纯 ASCII
+# 路径, 运行 uv 命令前需设置:
+#   set UV_PROJECT_ENVIRONMENT=C:\Users\Jason.Fan\.venvs\MFGTool_PyQt5
+# 详见 run.bat
+required-environments = [
+    "sys_platform == 'win32' and platform_machine == 'AMD64'",
+]
